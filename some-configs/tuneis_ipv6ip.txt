@@ -1,0 +1,48 @@
+!ISP2
+
+conf t
+interface Tunnel64
+ipv6 address 3001:10:10:0A00::1/64
+tunnel source f0/0
+tunnel destination 220.0.0.4
+tunnel mode ipv6ip
+tunnel mode gre ip
+end
+ 
+no ipv6 route 3001:10:10:2300::/64 Tunnel64
+
+!ISP1
+
+conf t
+interface Tunnel65
+ipv6 address 3001:10:10:0A00::2/64
+tunnel source f1/0
+tunnel destination 220.0.0.4
+tunnel mode ipv6ip
+tunnel mode gre ip
+end
+ 
+ipv6 route 3001:10:10:2300::/64 Tunnel65
+
+!R4
+
+conf t
+interface Tunnel65
+ipv6 address 3001:10:10:2A01::1/64
+tunnel source f0/0
+tunnel destination 220.0.0.1
+tunnel mode ipv6ip
+tunnel mode gre ip
+exit
+ipv6 route 3001:10:10::/51 Tunnel65
+end
+
+conf t
+interface Tunnel64
+ipv6 address 3001:10:10:2A00::1/64 
+tunnel source f0/0
+tunnel destination 220.0.0.2
+tunnel mode ipv6ip
+tunnel mode gre ip
+
+ipv6 route 3001:10:10::/51 Tunnel64

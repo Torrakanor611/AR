@@ -1,0 +1,48 @@
+May 15 21:50:15.605 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+May 15 21:50:15.606 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50189.
+May 15 21:50:16.098 HYPERVISOR: exec_cmd: hypervisor version 
+May 15 21:50:16.098 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Utilizador\Documents\ArqRedes\AR_Network\project-files\dynamips 
+May 15 21:50:16.098 GENERAL: working_dir=C:\Users\Utilizador\Documents\ArqRedes\AR_Network\project-files\dynamips
+May 15 21:50:16.099 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Utilizador\Documents\ArqRedes\AR_Network\project-files\dynamips\106686ed-3818-422f-bc29-78ffb0bae0c6 
+May 15 21:50:16.108 GENERAL: working_dir=C:\Users\Utilizador\Documents\ArqRedes\AR_Network\project-files\dynamips\106686ed-3818-422f-bc29-78ffb0bae0c6
+May 15 21:50:16.109 HYPERVISOR: exec_cmd: vm create D3 12 c3725 
+May 15 21:50:16.110 VM: VM D3 created.
+May 15 21:50:16.110 HYPERVISOR: exec_cmd: vm set_con_tcp_port D3 5017 
+May 15 21:50:16.111 HYPERVISOR: exec_cmd: c3725 get_mac_addr D3 
+May 15 21:50:16.111 HYPERVISOR: exec_cmd: vm set_disk0 D3 1 
+May 15 21:50:16.111 HYPERVISOR: exec_cmd: vm set_exec_area D3 64 
+May 15 21:50:16.112 HYPERVISOR: exec_cmd: vm get_status D3 
+May 15 21:50:16.112 HYPERVISOR: exec_cmd: vm set_idle_pc D3 0x60a6a1e0 
+May 15 21:50:16.113 HYPERVISOR: exec_cmd: vm set_ios D3 C:/Users/Utilizador/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+May 15 21:50:16.113 HYPERVISOR: exec_cmd: c3725 set_mac_addr D3 c20c.29c8.0000 
+May 15 21:50:16.113 HYPERVISOR: exec_cmd: vm set_nvram D3 256 
+May 15 21:50:16.114 HYPERVISOR: exec_cmd: vm get_status D3 
+May 15 21:50:16.114 HYPERVISOR: exec_cmd: vm slot_add_binding D3 1 0 NM-16ESW 
+May 15 21:50:27.557 HYPERVISOR: exec_cmd: nio create_udp udp-8dfe2135-c1dd-4e25-a637-5f643df48c1a 10054 127.0.0.1 10055 
+May 15 21:50:27.816 HYPERVISOR: exec_cmd: vm slot_add_nio_binding D3 1 0 udp-8dfe2135-c1dd-4e25-a637-5f643df48c1a 
+May 15 21:50:27.816 HYPERVISOR: exec_cmd: vm get_status D3 
+May 15 21:50:28.661 HYPERVISOR: exec_cmd: nio create_udp udp-9518cb32-1bba-4f4c-9c2f-195d1bd4d046 10068 127.0.0.1 10069 
+May 15 21:50:28.759 HYPERVISOR: exec_cmd: vm slot_add_nio_binding D3 1 13 udp-9518cb32-1bba-4f4c-9c2f-195d1bd4d046 
+May 15 21:50:28.759 HYPERVISOR: exec_cmd: vm get_status D3 
+May 15 21:50:33.229 HYPERVISOR: exec_cmd: nio create_udp udp-23d7dad2-9cd7-47ac-8ad8-d0f7ba975a56 10188 127.0.0.1 10189 
+May 15 21:50:33.232 HYPERVISOR: exec_cmd: vm slot_add_nio_binding D3 1 15 udp-23d7dad2-9cd7-47ac-8ad8-d0f7ba975a56 
+May 15 21:50:33.232 HYPERVISOR: exec_cmd: vm get_status D3 
+May 15 21:50:33.354 HYPERVISOR: exec_cmd: nio create_udp udp-02132144-955c-4439-8481-a5dc5af7073d 10194 127.0.0.1 10195 
+May 15 21:50:33.357 HYPERVISOR: exec_cmd: vm slot_add_nio_binding D3 1 14 udp-02132144-955c-4439-8481-a5dc5af7073d 
+May 15 21:50:33.357 HYPERVISOR: exec_cmd: vm get_status D3 
+May 15 22:05:05.975 HYPERVISOR: exec_cmd: vm set_ghost_status D3 2 
+May 15 22:05:05.976 HYPERVISOR: exec_cmd: vm set_ghost_file D3 C:\Users\Utilizador\Documents\ArqRedes\AR_Network\project-files\dynamips\c3725-advipservicesk9-mz.124-21.image-128.ghost 
+May 15 22:05:05.977 HYPERVISOR: exec_cmd: vm get_status D3 
+May 15 22:05:05.977 HYPERVISOR: exec_cmd: vm set_config D3 configs\i12_startup-config.cfg 
+May 15 22:05:05.977 HYPERVISOR: exec_cmd: vm start D3 
+May 15 22:29:18.986 HYPERVISOR: exec_cmd: vm get_status D3 
+May 15 22:29:18.986 HYPERVISOR: exec_cmd: vm stop D3 
+May 15 22:29:19.176 VM: VM D3 shutdown.
+May 15 22:29:19.177 HYPERVISOR: exec_cmd: vm extract_config D3 
+May 15 22:29:20.768 HYPERVISOR: exec_cmd: vm get_status D3 
+May 15 22:29:20.776 HYPERVISOR: exec_cmd: vm extract_config D3 
+May 15 22:29:20.793 HYPERVISOR: exec_cmd: vm delete D3 
+May 15 22:29:20.794 VM: VM D3 destroyed.
+May 15 22:29:20.807 HYPERVISOR: exec_cmd: hypervisor stop 
+May 15 22:29:21.142 HYPERVISOR: Stopped.
+May 15 22:29:21.142 GENERAL: reset done.

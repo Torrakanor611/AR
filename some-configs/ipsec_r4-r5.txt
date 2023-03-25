@@ -1,0 +1,63 @@
+
+!IPS1
+conf t  
+crypto isakmp policy 30  
+authentication pre-share  
+crypto isakmp key labcom address 220.0.0.4 
+crypto ipsec transform-set authT ah-sha-hmac  
+crypto ipsec transform-set cipherT esp-des  
+crypto ipsec transform-set auth_ciphT ah-sha-hmac esp-des  
+crypto ipsec profile ARipsec  
+set transform-set auth_ciphT authT cipherT  
+
+interface Tunnel 14  
+ip unnumbered FastEthernet1/0 
+tunnel source 220.0.0.1
+tunnel destination 220.0.0.4 
+tunnel mode ipsec ipv4  
+tunnel protection ipsec profile ARipsec  
+end  
+  
+conf t  
+access-list 114 permit ip 10.3.0.0 0.0.0.255 10.35.0.0 0.0.0.255
+access-list 114 permit ip 10.3.16.0 0.0.0.255 10.35.0.0 0.0.0.255
+
+route-map routeT14 permit 10  
+match ip address 114 
+set interface Tunnel 14
+
+interface FastEthernet0/0  
+ip policy route-map routeT14
+interface FastEthernet0/1
+ip policy route-map routeT14
+end
+
+!R4
+
+conf t  
+crypto isakmp policy 30  
+authentication pre-share  
+crypto isakmp key labcom address 220.0.0.1
+crypto ipsec transform-set authT ah-sha-hmac  
+crypto ipsec transform-set cipherT esp-des  
+crypto ipsec transform-set auth_ciphT ah-sha-hmac esp-des  
+crypto ipsec profile ARipsec  
+set transform-set auth_ciphT authT cipherT  
+
+interface Tunnel 14
+ip unnumbered FastEthernet0/0
+tunnel source 220.0.0.4
+tunnel destination 220.0.0.1
+tunnel mode ipsec ipv4  
+tunnel protection ipsec profile ARipsec  
+end  
+ 
+conf t  
+access-list 114 permit ip 10.35.0.0 0.0.0.255 10.3.0.0 0.0.0.255
+access-list 114 permit ip 10.35.0.0 0.0.0.255 10.3.16.0 0.0.0.255
+route-map routeT14 permit 10  
+match ip address 114 
+set interface Tunnel 14
+interface FastEthernet0/1
+ip policy route-map routeT14
+end 

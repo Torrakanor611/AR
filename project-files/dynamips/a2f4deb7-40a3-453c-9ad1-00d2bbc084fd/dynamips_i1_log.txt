@@ -1,0 +1,62 @@
+Jun 03 11:13:48.327 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 03 11:13:48.328 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49907.
+Jun 03 11:13:48.684 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 03 11:13:48.684 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Utilizador\Documents\ArqRedes\AR_Network\project-files\dynamips 
+Jun 03 11:13:50.075 GENERAL: working_dir=C:\Users\Utilizador\Documents\ArqRedes\AR_Network\project-files\dynamips
+Jun 03 11:13:50.075 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Utilizador\Documents\ArqRedes\AR_Network\project-files\dynamips\a2f4deb7-40a3-453c-9ad1-00d2bbc084fd 
+Jun 03 11:13:50.082 GENERAL: working_dir=C:\Users\Utilizador\Documents\ArqRedes\AR_Network\project-files\dynamips\a2f4deb7-40a3-453c-9ad1-00d2bbc084fd
+Jun 03 11:13:50.082 HYPERVISOR: exec_cmd: vm create C2 1 c3725 
+Jun 03 11:13:50.091 VM: VM C2 created.
+Jun 03 11:13:50.092 HYPERVISOR: exec_cmd: vm set_con_tcp_port C2 5021 
+Jun 03 11:13:50.092 HYPERVISOR: exec_cmd: c3725 get_mac_addr C2 
+Jun 03 11:13:50.092 HYPERVISOR: exec_cmd: vm set_disk0 C2 1 
+Jun 03 11:13:50.093 HYPERVISOR: exec_cmd: vm set_exec_area C2 64 
+Jun 03 11:13:50.093 HYPERVISOR: exec_cmd: vm get_status C2 
+Jun 03 11:13:50.093 HYPERVISOR: exec_cmd: vm set_idle_pc C2 0x60a6a1e0 
+Jun 03 11:13:50.121 HYPERVISOR: exec_cmd: vm set_ios C2 C:/Users/Utilizador/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 03 11:13:50.122 HYPERVISOR: exec_cmd: c3725 set_mac_addr C2 c201.1f90.0000 
+Jun 03 11:13:50.122 HYPERVISOR: exec_cmd: vm set_nvram C2 256 
+Jun 03 11:13:50.123 HYPERVISOR: exec_cmd: vm get_status C2 
+Jun 03 11:13:50.123 HYPERVISOR: exec_cmd: vm slot_add_binding C2 1 0 NM-16ESW 
+Jun 03 11:14:12.580 HYPERVISOR: exec_cmd: nio create_udp udp-0032dd9d-b5dc-4a7a-8f76-62d10aa2d110 10074 127.0.0.1 10075 
+Jun 03 11:14:12.826 HYPERVISOR: exec_cmd: vm slot_add_nio_binding C2 1 11 udp-0032dd9d-b5dc-4a7a-8f76-62d10aa2d110 
+Jun 03 11:14:12.827 HYPERVISOR: exec_cmd: vm get_status C2 
+Jun 03 11:14:13.230 HYPERVISOR: exec_cmd: nio create_udp udp-f3834609-b7fe-4006-8484-ccb5ab9dd6a7 10082 127.0.0.1 10083 
+Jun 03 11:14:13.233 HYPERVISOR: exec_cmd: vm slot_add_nio_binding C2 1 14 udp-f3834609-b7fe-4006-8484-ccb5ab9dd6a7 
+Jun 03 11:14:13.234 HYPERVISOR: exec_cmd: vm get_status C2 
+Jun 03 11:14:13.612 HYPERVISOR: exec_cmd: nio create_udp udp-0957552c-cee6-437e-ad0c-1006b5d8c7ab 10100 127.0.0.1 10101 
+Jun 03 11:14:13.616 HYPERVISOR: exec_cmd: vm slot_add_nio_binding C2 1 15 udp-0957552c-cee6-437e-ad0c-1006b5d8c7ab 
+Jun 03 11:14:13.617 HYPERVISOR: exec_cmd: vm get_status C2 
+Jun 03 11:14:13.878 HYPERVISOR: exec_cmd: nio create_udp udp-8625611c-4691-4786-ad05-04f714072947 10112 127.0.0.1 10113 
+Jun 03 11:14:13.880 HYPERVISOR: exec_cmd: vm slot_add_nio_binding C2 1 13 udp-8625611c-4691-4786-ad05-04f714072947 
+Jun 03 11:14:13.880 HYPERVISOR: exec_cmd: vm get_status C2 
+Jun 03 11:14:14.103 HYPERVISOR: exec_cmd: nio create_udp udp-c8de89d5-d9a6-4efe-8b4b-0c965ed3711f 10124 127.0.0.1 10125 
+Jun 03 11:14:14.106 HYPERVISOR: exec_cmd: vm slot_add_nio_binding C2 1 12 udp-c8de89d5-d9a6-4efe-8b4b-0c965ed3711f 
+Jun 03 11:14:14.106 HYPERVISOR: exec_cmd: vm get_status C2 
+Jun 03 11:14:14.638 HYPERVISOR: exec_cmd: nio create_udp udp-f7d99639-b776-4fc8-a1b8-837ffd7f50d4 10134 127.0.0.1 10135 
+Jun 03 11:14:14.641 HYPERVISOR: exec_cmd: vm slot_add_nio_binding C2 1 4 udp-f7d99639-b776-4fc8-a1b8-837ffd7f50d4 
+Jun 03 11:14:14.641 HYPERVISOR: exec_cmd: vm get_status C2 
+Jun 03 11:14:14.849 HYPERVISOR: exec_cmd: nio create_udp udp-fd1558ed-98d9-486c-b6af-2ee3f45db4de 10146 127.0.0.1 10147 
+Jun 03 11:14:14.852 HYPERVISOR: exec_cmd: vm slot_add_nio_binding C2 1 3 udp-fd1558ed-98d9-486c-b6af-2ee3f45db4de 
+Jun 03 11:14:14.852 HYPERVISOR: exec_cmd: vm get_status C2 
+Jun 03 11:14:15.238 HYPERVISOR: exec_cmd: nio create_udp udp-90fbb00f-e4da-4416-a828-7f657a4c88bc 10168 127.0.0.1 10169 
+Jun 03 11:14:15.241 HYPERVISOR: exec_cmd: vm slot_add_nio_binding C2 1 5 udp-90fbb00f-e4da-4416-a828-7f657a4c88bc 
+Jun 03 11:14:15.241 HYPERVISOR: exec_cmd: vm get_status C2 
+Jun 03 11:14:16.304 HYPERVISOR: exec_cmd: nio create_udp udp-6e0b1e7f-a227-404f-92d0-6e2edd883e4a 10194 127.0.0.1 10195 
+Jun 03 11:14:16.307 HYPERVISOR: exec_cmd: vm slot_add_nio_binding C2 1 10 udp-6e0b1e7f-a227-404f-92d0-6e2edd883e4a 
+Jun 03 11:14:16.308 HYPERVISOR: exec_cmd: vm get_status C2 
+Jun 03 11:14:16.983 HYPERVISOR: exec_cmd: nio create_udp udp-6572bbb6-50b5-47d6-8b25-0a37acc581c2 10220 127.0.0.1 10221 
+Jun 03 11:14:16.986 HYPERVISOR: exec_cmd: vm slot_add_nio_binding C2 1 8 udp-6572bbb6-50b5-47d6-8b25-0a37acc581c2 
+Jun 03 11:14:16.987 HYPERVISOR: exec_cmd: vm get_status C2 
+Jun 03 11:20:37.420 HYPERVISOR: exec_cmd: vm set_ghost_status C2 2 
+Jun 03 11:20:37.421 HYPERVISOR: exec_cmd: vm set_ghost_file C2 C:\Users\Utilizador\Documents\ArqRedes\AR_Network\project-files\dynamips\c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jun 03 11:20:37.421 HYPERVISOR: exec_cmd: vm get_status C2 
+Jun 03 11:20:37.423 HYPERVISOR: exec_cmd: vm set_config C2 configs\i1_startup-config.cfg 
+Jun 03 11:20:37.423 HYPERVISOR: exec_cmd: vm start C2 
+Jun 03 17:07:42.138 HYPERVISOR: exec_cmd: vm get_status C2 
+Jun 03 17:07:42.186 HYPERVISOR: exec_cmd: vm stop C2 
+Jun 03 17:07:44.038 VM: VM C2 shutdown.
+Jun 03 17:07:44.623 HYPERVISOR: exec_cmd: vm extract_config C2 
+Jun 03 17:07:53.861 HYPERVISOR: Stopped.
+Jun 03 17:07:53.861 VM: VM C2 destroyed.
+Jun 03 17:07:54.174 GENERAL: reset done.

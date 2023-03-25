@@ -1,0 +1,75 @@
+Jun 03 11:13:52.684 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 03 11:13:52.685 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49924.
+Jun 03 11:13:53.190 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 03 11:13:53.190 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Utilizador\Documents\ArqRedes\AR_Network\project-files\dynamips 
+Jun 03 11:13:53.190 GENERAL: working_dir=C:\Users\Utilizador\Documents\ArqRedes\AR_Network\project-files\dynamips
+Jun 03 11:13:53.190 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Utilizador\Documents\ArqRedes\AR_Network\project-files\dynamips\ac36a3a9-e483-4e81-92d5-cb15b863ee44 
+Jun 03 11:13:53.191 GENERAL: working_dir=C:\Users\Utilizador\Documents\ArqRedes\AR_Network\project-files\dynamips\ac36a3a9-e483-4e81-92d5-cb15b863ee44
+Jun 03 11:13:53.191 HYPERVISOR: exec_cmd: vm create ISP2 9 c7200 
+Jun 03 11:13:53.204 VM: VM ISP2 created.
+Jun 03 11:13:53.205 HYPERVISOR: exec_cmd: vm set_con_tcp_port ISP2 5011 
+Jun 03 11:13:53.206 HYPERVISOR: exec_cmd: c7200 get_mac_addr ISP2 
+Jun 03 11:13:53.206 HYPERVISOR: exec_cmd: vm get_status ISP2 
+Jun 03 11:13:53.206 HYPERVISOR: exec_cmd: vm slot_add_binding ISP2 0 0 C7200-IO-FE 
+Jun 03 11:13:53.207 HYPERVISOR: exec_cmd: vm set_disk0 ISP2 0 
+Jun 03 11:13:53.207 HYPERVISOR: exec_cmd: vm set_exec_area ISP2 64 
+Jun 03 11:13:53.207 HYPERVISOR: exec_cmd: vm get_status ISP2 
+Jun 03 11:13:53.208 HYPERVISOR: exec_cmd: vm set_idle_pc ISP2 0x60608040 
+Jun 03 11:13:53.209 HYPERVISOR: exec_cmd: vm set_ios ISP2 C:/Users/Utilizador/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 03 11:13:53.209 HYPERVISOR: exec_cmd: c7200 set_mac_addr ISP2 ca09.1cf8.0000 
+Jun 03 11:13:53.210 HYPERVISOR: exec_cmd: vm set_nvram ISP2 512 
+Jun 03 11:13:53.210 HYPERVISOR: exec_cmd: vm set_ram ISP2 512 
+Jun 03 11:13:53.210 HYPERVISOR: exec_cmd: vm get_status ISP2 
+Jun 03 11:13:53.211 HYPERVISOR: exec_cmd: vm slot_remove_binding ISP2 0 0 
+Jun 03 11:13:53.211 HYPERVISOR: exec_cmd: vm get_status ISP2 
+Jun 03 11:13:53.211 HYPERVISOR: exec_cmd: vm slot_add_binding ISP2 0 0 C7200-IO-2FE 
+Jun 03 11:13:53.212 HYPERVISOR: exec_cmd: vm get_status ISP2 
+Jun 03 11:13:53.213 HYPERVISOR: exec_cmd: vm slot_add_binding ISP2 1 0 PA-2FE-TX 
+Jun 03 11:14:08.016 HYPERVISOR: exec_cmd: nio create_udp udp-1698be3c-b2d0-400b-bdc0-943fc488daf9 10008 127.0.0.1 10009 
+Jun 03 11:14:08.269 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP2 0 0 udp-1698be3c-b2d0-400b-bdc0-943fc488daf9 
+Jun 03 11:14:08.269 HYPERVISOR: exec_cmd: vm get_status ISP2 
+Jun 03 11:14:14.761 HYPERVISOR: exec_cmd: nio create_udp udp-9d704441-13ad-4215-8681-d63da992eef4 10142 127.0.0.1 10143 
+Jun 03 11:14:14.763 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP2 0 1 udp-9d704441-13ad-4215-8681-d63da992eef4 
+Jun 03 11:14:14.764 HYPERVISOR: exec_cmd: vm get_status ISP2 
+Jun 03 11:14:14.860 HYPERVISOR: exec_cmd: nio create_udp udp-b946c0e1-1ff0-479c-bdff-f9a8beb669b9 10148 127.0.0.1 10149 
+Jun 03 11:14:14.863 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP2 1 0 udp-b946c0e1-1ff0-479c-bdff-f9a8beb669b9 
+Jun 03 11:14:14.863 HYPERVISOR: exec_cmd: vm get_status ISP2 
+Jun 03 11:14:15.052 HYPERVISOR: exec_cmd: nio create_udp udp-f51c03b4-8878-4bf3-94a9-8c472bf4b9af 10158 127.0.0.1 10159 
+Jun 03 11:14:15.055 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP2 1 1 udp-f51c03b4-8878-4bf3-94a9-8c472bf4b9af 
+Jun 03 11:14:15.056 HYPERVISOR: exec_cmd: vm get_status ISP2 
+Jun 03 11:20:39.251 HYPERVISOR: exec_cmd: vm set_ghost_status ISP2 2 
+Jun 03 11:20:39.291 HYPERVISOR: exec_cmd: vm set_ghost_file ISP2 C:\Users\Utilizador\Documents\ArqRedes\AR_Network\project-files\dynamips\c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jun 03 11:20:39.292 HYPERVISOR: exec_cmd: vm get_status ISP2 
+Jun 03 11:20:39.311 HYPERVISOR: exec_cmd: vm set_config ISP2 configs\i9_startup-config.cfg configs\i9_private-config.cfg 
+Jun 03 11:20:39.311 HYPERVISOR: exec_cmd: vm start ISP2 
+Jun 03 11:21:10.129 HYPERVISOR: exec_cmd: vm extract_config ISP2 
+Jun 03 11:21:40.136 HYPERVISOR: exec_cmd: vm extract_config ISP2 
+Jun 03 12:38:40.925 HYPERVISOR: exec_cmd: vm extract_config ISP2 
+Jun 03 12:53:11.220 HYPERVISOR: exec_cmd: vm extract_config ISP2 
+Jun 03 15:09:17.226 HYPERVISOR: exec_cmd: vm get_status ISP2 
+Jun 03 15:09:17.227 HYPERVISOR: exec_cmd: vm stop ISP2 
+Jun 03 15:09:17.480 VM: VM ISP2 shutdown.
+Jun 03 15:09:17.481 HYPERVISOR: exec_cmd: vm extract_config ISP2 
+Jun 03 15:09:19.313 HYPERVISOR: exec_cmd: vm set_ghost_status ISP2 2 
+Jun 03 15:09:19.314 HYPERVISOR: exec_cmd: vm set_ghost_file ISP2 C:\Users\Utilizador\Documents\ArqRedes\AR_Network\project-files\dynamips\c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jun 03 15:09:19.314 HYPERVISOR: exec_cmd: vm get_status ISP2 
+Jun 03 15:09:19.327 HYPERVISOR: exec_cmd: vm set_config ISP2 configs\i9_startup-config.cfg configs\i9_private-config.cfg 
+Jun 03 15:09:19.328 HYPERVISOR: exec_cmd: vm start ISP2 
+Jun 03 15:14:20.596 HYPERVISOR: exec_cmd: vm extract_config ISP2 
+Jun 03 15:20:15.652 HYPERVISOR: exec_cmd: vm get_status ISP2 
+Jun 03 15:20:15.652 HYPERVISOR: exec_cmd: vm stop ISP2 
+Jun 03 15:20:15.923 VM: VM ISP2 shutdown.
+Jun 03 15:20:15.925 HYPERVISOR: exec_cmd: vm extract_config ISP2 
+Jun 03 15:20:18.099 HYPERVISOR: exec_cmd: vm set_ghost_status ISP2 2 
+Jun 03 15:20:18.100 HYPERVISOR: exec_cmd: vm set_ghost_file ISP2 C:\Users\Utilizador\Documents\ArqRedes\AR_Network\project-files\dynamips\c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jun 03 15:20:18.100 HYPERVISOR: exec_cmd: vm get_status ISP2 
+Jun 03 15:20:18.100 HYPERVISOR: exec_cmd: vm set_config ISP2 configs\i9_startup-config.cfg configs\i9_private-config.cfg 
+Jun 03 15:20:18.101 HYPERVISOR: exec_cmd: vm start ISP2 
+Jun 03 15:35:18.490 HYPERVISOR: exec_cmd: vm extract_config ISP2 
+Jun 03 17:07:45.077 HYPERVISOR: exec_cmd: vm get_status ISP2 
+Jun 03 17:07:45.159 HYPERVISOR: exec_cmd: vm stop ISP2 
+Jun 03 17:07:47.817 VM: VM ISP2 shutdown.
+Jun 03 17:07:47.819 HYPERVISOR: exec_cmd: vm extract_config ISP2 
+Jun 03 17:07:54.287 HYPERVISOR: Stopped.
+Jun 03 17:07:54.287 VM: VM ISP2 destroyed.
+Jun 03 17:07:54.363 GENERAL: reset done.

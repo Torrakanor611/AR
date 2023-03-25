@@ -1,0 +1,68 @@
+May 18 20:38:29.609 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+May 18 20:38:29.610 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 62184.
+May 18 20:38:30.105 HYPERVISOR: exec_cmd: hypervisor version 
+May 18 20:38:30.105 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Utilizador\Documents\ArqRedes\AR_Network\project-files\dynamips 
+May 18 20:38:30.105 GENERAL: working_dir=C:\Users\Utilizador\Documents\ArqRedes\AR_Network\project-files\dynamips
+May 18 20:38:30.106 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Utilizador\Documents\ArqRedes\AR_Network\project-files\dynamips\df088e70-3a6c-4524-93d5-19358e6654ab 
+May 18 20:38:30.109 GENERAL: working_dir=C:\Users\Utilizador\Documents\ArqRedes\AR_Network\project-files\dynamips\df088e70-3a6c-4524-93d5-19358e6654ab
+May 18 20:38:30.109 HYPERVISOR: exec_cmd: vm create R1 5 c7200 
+May 18 20:38:30.111 VM: VM R1 created.
+May 18 20:38:30.111 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5027 
+May 18 20:38:30.112 HYPERVISOR: exec_cmd: c7200 get_mac_addr R1 
+May 18 20:38:30.112 HYPERVISOR: exec_cmd: vm get_status R1 
+May 18 20:38:30.112 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-FE 
+May 18 20:38:30.113 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+May 18 20:38:30.113 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+May 18 20:38:30.113 HYPERVISOR: exec_cmd: vm get_status R1 
+May 18 20:38:30.114 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60608040 
+May 18 20:38:30.115 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/Utilizador/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+May 18 20:38:30.115 HYPERVISOR: exec_cmd: c7200 set_mac_addr R1 ca05.0654.0000 
+May 18 20:38:30.116 HYPERVISOR: exec_cmd: vm set_nvram R1 512 
+May 18 20:38:30.116 HYPERVISOR: exec_cmd: vm set_ram R1 512 
+May 18 20:38:30.117 HYPERVISOR: exec_cmd: vm get_status R1 
+May 18 20:38:30.117 HYPERVISOR: exec_cmd: vm slot_remove_binding R1 0 0 
+May 18 20:38:30.118 HYPERVISOR: exec_cmd: vm get_status R1 
+May 18 20:38:30.118 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-2FE 
+May 18 20:38:30.118 HYPERVISOR: exec_cmd: vm get_status R1 
+May 18 20:38:30.119 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 PA-2FE-TX 
+May 18 20:38:39.119 HYPERVISOR: exec_cmd: nio create_udp udp-ed1262ed-ad41-4fd4-867b-0dfe58cfa7a3 10002 127.0.0.1 10003 
+May 18 20:38:39.647 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-ed1262ed-ad41-4fd4-867b-0dfe58cfa7a3 
+May 18 20:38:39.648 HYPERVISOR: exec_cmd: vm get_status R1 
+May 18 20:38:46.017 HYPERVISOR: exec_cmd: nio create_udp udp-17a92ebe-d51d-422f-a6dd-1402a8b24b5c 10170 127.0.0.1 10171 
+May 18 20:38:46.019 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-17a92ebe-d51d-422f-a6dd-1402a8b24b5c 
+May 18 20:38:46.020 HYPERVISOR: exec_cmd: vm get_status R1 
+May 18 20:38:46.108 HYPERVISOR: exec_cmd: nio create_udp udp-f0dd5695-49e2-4e91-b197-e304252e8dba 10176 127.0.0.1 10177 
+May 18 20:38:46.110 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 1 0 udp-f0dd5695-49e2-4e91-b197-e304252e8dba 
+May 18 20:38:46.110 HYPERVISOR: exec_cmd: vm get_status R1 
+May 18 21:09:53.312 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+May 18 21:09:53.315 VM: VM Ghost created.
+May 18 21:09:53.316 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Utilizador/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+May 18 21:09:53.316 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+May 18 21:09:53.317 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\Utilizador\Documents\ArqRedes\AR_Network\project-files\dynamips\c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+May 18 21:09:53.317 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+May 18 21:09:53.318 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 18 21:09:53.709 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+May 18 21:09:53.710 HYPERVISOR: exec_cmd: vm start Ghost 
+May 18 21:09:55.263 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 18 21:09:55.264 HYPERVISOR: exec_cmd: vm stop Ghost 
+May 18 21:09:55.511 VM: VM Ghost shutdown.
+May 18 21:09:55.512 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+May 18 21:09:55.514 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+May 18 21:09:55.514 VM: VM Ghost destroyed.
+May 18 21:09:55.767 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+May 18 21:09:55.768 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\Utilizador\Documents\ArqRedes\AR_Network\project-files\dynamips\c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+May 18 21:09:55.769 HYPERVISOR: exec_cmd: vm get_status R1 
+May 18 21:09:55.780 HYPERVISOR: exec_cmd: vm set_config R1 configs\i5_startup-config.cfg 
+May 18 21:09:55.781 HYPERVISOR: exec_cmd: vm start R1 
+May 18 21:10:57.385 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 18 23:46:52.651 HYPERVISOR: exec_cmd: vm get_status R1 
+May 18 23:46:52.678 HYPERVISOR: exec_cmd: vm stop R1 
+May 18 23:46:53.224 VM: VM R1 shutdown.
+May 18 23:46:53.225 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 18 23:46:56.232 HYPERVISOR: exec_cmd: vm get_status R1 
+May 18 23:46:56.233 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 18 23:46:56.234 HYPERVISOR: exec_cmd: vm delete R1 
+May 18 23:46:56.234 VM: VM R1 destroyed.
+May 18 23:46:56.236 HYPERVISOR: exec_cmd: hypervisor stop 
+May 18 23:46:56.613 HYPERVISOR: Stopped.
+May 18 23:46:56.614 GENERAL: reset done.

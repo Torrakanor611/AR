@@ -1,0 +1,54 @@
+May 15 21:50:12.686 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+May 15 21:50:12.687 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50176.
+May 15 21:50:13.196 HYPERVISOR: exec_cmd: hypervisor version 
+May 15 21:50:13.197 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Utilizador\Documents\ArqRedes\AR_Network\project-files\dynamips 
+May 15 21:50:13.197 GENERAL: working_dir=C:\Users\Utilizador\Documents\ArqRedes\AR_Network\project-files\dynamips
+May 15 21:50:13.197 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Utilizador\Documents\ArqRedes\AR_Network\project-files\dynamips\ac36a3a9-e483-4e81-92d5-cb15b863ee44 
+May 15 21:50:13.233 GENERAL: working_dir=C:\Users\Utilizador\Documents\ArqRedes\AR_Network\project-files\dynamips\ac36a3a9-e483-4e81-92d5-cb15b863ee44
+May 15 21:50:13.234 HYPERVISOR: exec_cmd: vm create R3 9 c7200 
+May 15 21:50:13.235 VM: VM R3 created.
+May 15 21:50:13.236 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5011 
+May 15 21:50:13.236 HYPERVISOR: exec_cmd: c7200 get_mac_addr R3 
+May 15 21:50:13.236 HYPERVISOR: exec_cmd: vm get_status R3 
+May 15 21:50:13.236 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-FE 
+May 15 21:50:13.237 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+May 15 21:50:13.237 HYPERVISOR: exec_cmd: vm set_exec_area R3 64 
+May 15 21:50:13.238 HYPERVISOR: exec_cmd: vm get_status R3 
+May 15 21:50:13.238 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x60608040 
+May 15 21:50:13.239 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/Utilizador/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+May 15 21:50:13.239 HYPERVISOR: exec_cmd: c7200 set_mac_addr R3 ca09.1cf8.0000 
+May 15 21:50:13.239 HYPERVISOR: exec_cmd: vm set_nvram R3 512 
+May 15 21:50:13.240 HYPERVISOR: exec_cmd: vm set_ram R3 512 
+May 15 21:50:13.240 HYPERVISOR: exec_cmd: vm get_status R3 
+May 15 21:50:13.240 HYPERVISOR: exec_cmd: vm slot_remove_binding R3 0 0 
+May 15 21:50:13.241 HYPERVISOR: exec_cmd: vm get_status R3 
+May 15 21:50:13.241 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-2FE 
+May 15 21:50:13.242 HYPERVISOR: exec_cmd: vm get_status R3 
+May 15 21:50:13.242 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 PA-2FE-TX 
+May 15 21:50:23.785 HYPERVISOR: exec_cmd: nio create_udp udp-84a0440f-048d-496c-897f-0fd323ae1ce9 10008 127.0.0.1 10009 
+May 15 21:50:24.059 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-84a0440f-048d-496c-897f-0fd323ae1ce9 
+May 15 21:50:24.059 HYPERVISOR: exec_cmd: vm get_status R3 
+May 15 21:50:32.151 HYPERVISOR: exec_cmd: nio create_udp udp-4e108ba4-330a-4b5a-aacb-da0470814c9c 10136 127.0.0.1 10137 
+May 15 21:50:32.157 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 1 udp-4e108ba4-330a-4b5a-aacb-da0470814c9c 
+May 15 21:50:32.158 HYPERVISOR: exec_cmd: vm get_status R3 
+May 15 21:50:32.284 HYPERVISOR: exec_cmd: nio create_udp udp-7bccadab-1f37-4444-bbd9-605fd20ddccd 10142 127.0.0.1 10143 
+May 15 21:50:32.286 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 1 0 udp-7bccadab-1f37-4444-bbd9-605fd20ddccd 
+May 15 21:50:32.287 HYPERVISOR: exec_cmd: vm get_status R3 
+May 15 22:05:05.097 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+May 15 22:05:05.098 HYPERVISOR: exec_cmd: vm set_ghost_file R3 C:\Users\Utilizador\Documents\ArqRedes\AR_Network\project-files\dynamips\c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+May 15 22:05:05.098 HYPERVISOR: exec_cmd: vm get_status R3 
+May 15 22:05:05.099 HYPERVISOR: exec_cmd: vm set_config R3 configs\i9_startup-config.cfg 
+May 15 22:05:05.100 HYPERVISOR: exec_cmd: vm start R3 
+May 15 22:05:35.949 HYPERVISOR: exec_cmd: vm extract_config R3 
+May 15 22:06:05.967 HYPERVISOR: exec_cmd: vm extract_config R3 
+May 15 22:29:18.667 HYPERVISOR: exec_cmd: vm get_status R3 
+May 15 22:29:18.667 HYPERVISOR: exec_cmd: vm stop R3 
+May 15 22:29:18.894 VM: VM R3 shutdown.
+May 15 22:29:18.895 HYPERVISOR: exec_cmd: vm extract_config R3 
+May 15 22:29:20.771 HYPERVISOR: exec_cmd: vm get_status R3 
+May 15 22:29:20.778 HYPERVISOR: exec_cmd: vm extract_config R3 
+May 15 22:29:20.786 HYPERVISOR: exec_cmd: vm delete R3 
+May 15 22:29:20.786 VM: VM R3 destroyed.
+May 15 22:29:20.792 HYPERVISOR: exec_cmd: hypervisor stop 
+May 15 22:29:21.173 HYPERVISOR: Stopped.
+May 15 22:29:21.173 GENERAL: reset done.
